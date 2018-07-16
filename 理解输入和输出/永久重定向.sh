@@ -3,8 +3,8 @@
 # redirecting all to a file
 
 # 脚本执行期间，用exec命令告诉shell重定向某个特定文件描述符
-
-exec 2>test#0 表示stdin,1表示stdout,2表示stderr
+#0 表示stdin,1表示stdout,2表示stderr
+exec 2>test
 
 ls badtest
 echo "This is test of redirecting all output"
